@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+
+  db:
+    image: mongo:latest
+    volumes:
+      - "/var/bot_api/db/data/:/data/"
+    ports:
+      - "27017:27017"
