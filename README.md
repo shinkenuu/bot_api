@@ -9,6 +9,7 @@
 
 ```sh
 docker-compose up -d # Start MongoDB, with volumes in /var/bot_api/db/data/
+pip install -r requirements.txt
 APP_CONFIG=prod flask run
 ```
 ---
