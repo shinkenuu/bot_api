@@ -4,6 +4,24 @@
   
  Mongo will be at host's port 27107, Flask will use port 5000
  
+ Obs: The `/messages` endpoint isn't within a `Resource` class because I didn't make time to study how to read `GET` parameters from the URI.
+  So the `GET /messages?conversationId` must be a function view, letting the `POST /messages` be the only method in a `MessageDetail` class 
+  and the `GET /messages` be a single method in a `MessageList` class (which isn't pythonic at all) 
+ 
+ ---
+ ### Resolving dependencies
+ 
+```sh
+pip install -r requirements.txt
+```
+
+if you get problems with `marshmallow`, install it with
+
+```sh
+pip install -U marshmallow --pre
+```
+ 
+ 
 ---
 ### How to run
 
